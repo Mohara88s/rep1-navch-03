@@ -44,12 +44,21 @@ backgrunds colors:
 }
 
 /* Basic teg-style settings*/
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
   color: inherit;
+  display: block;
+  background-color: red;
 }
 p {
   color: var(--auxiliary-text-color);
@@ -67,8 +76,8 @@ body {
 }
 h1 {
   color: var(--additional-color);
-  background-color: #2f303a;
-
+  display: inline-block;
+  margin-top: 106px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -81,7 +90,9 @@ h2 {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
 }
+
 footer {
   color: var(--additional-color);
   background-color: #2f303a;
@@ -90,7 +101,19 @@ address {
   font-style: normal;
   line-height: 1.71;
 }
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Special teg-style settings*/
+
+/* containers */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 
 /* logo*/
 .logo span,
@@ -104,6 +127,18 @@ address {
   line-height: 1.19;
 }
 /* header navigation*/
+header .container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+}
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
 .navigation a,
 .header-contacts a {
   font-weight: 500;
@@ -120,27 +155,43 @@ address {
   color: var(--accent-color);
 }
 /* footer*/
-address a {
+.footer-address a {
   color: var(--second-additional-color);
 }
 
 /*index.html main*/
+.hero-section {
+  background-color: #2f303a;
+}
+.hero {
+  text-align: center;
+}
 .hero-button {
+  display: inline-block;
+  padding: 10px 32px;
+  margin: auto;
+  margin-top: 30px;
   color: var(--additional-color);
   background-color: var(--accent-color);
 
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.benefits {
+  display: flex;
+}
+.benefits li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .benefits h3 {
+  margin-bottom: 10px;
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -148,18 +199,35 @@ address a {
   font-weight: 400;
   line-height: 1.71;
 }
+.spec-ion {
+  display: flex;
+}
+.spec-ion li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-section {
   background-color: var(--section-bg-color);
 }
+.team {
+  display: flex;
+}
+.team li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team h3 {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 .team p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.17;
+  text-align: center;
 }
 
 /*portfolio.html main*/

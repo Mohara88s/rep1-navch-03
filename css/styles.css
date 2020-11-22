@@ -1,0 +1,193 @@
+/*
+index.html
+text colors:
+    #212121 - main (nav, h, logo color2)
+    #757575 - auxiliary (p, nav button adres/phone)
+    #2196f3 - accent (logo color1, activ)
+    #FFFFFF - footer h, footer logo color1, hero caption
+    #FFFFFF 60%  - futer p
+backgrunds colors:
+    #FFFFFF - nav, cards
+    #2196f3 - button
+    #E5E5E5 - section
+    #F5F4FA - section alternative
+    #2F303A - footer: 
+
+portfolio.html
+text colors:
+    #212121 - main (nav, h, logo color2, unhovered filters)
+    #757575 - auxiliary (p, nav button adres/phone)
+    #2196f3 - logo color1, activ nav
+    #FFFFFF - footer h, footer logo color1, hovered filters
+    #FFFFFF 60%  - futer p:
+backgrunds colors:
+    #FFFFFF - nav, cards
+    #ECECEC -portfolio line "heder-section"
+    #E5E5E5 - section
+    #F5F4FA - unhovered filters
+    #2196f3 - hovered filters
+    #EEEEEE cards border
+    #2F303A - footer: 
+
+    add fonts
+    font-family: 'Raleway', sans-serif;
+    
+*/
+
+:root {
+  --main-text-color: #212121;
+  --auxiliary-text-color: #757575;
+  --accent-color: #2196f3;
+  --section-bg-color: #f5f4fa;
+  --additional-color: #ffffff;
+  --second-additional-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Basic teg-style settings*/
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+p {
+  color: var(--auxiliary-text-color);
+}
+body {
+  background-color: var(--additional-color);
+  color: var(--main-text-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+h1 {
+  color: var(--additional-color);
+  background-color: #2f303a;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+footer {
+  color: var(--additional-color);
+  background-color: #2f303a;
+}
+address {
+  font-style: normal;
+  line-height: 1.71;
+}
+/* Special teg-style settings*/
+
+/* logo*/
+.logo span,
+#selected-page {
+  color: var(--accent-color);
+}
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+/* header navigation*/
+.navigation a,
+.header-contacts a {
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.header-contacts a {
+  color: var(--auxiliary-text-color);
+}
+.navigation a:hover,
+.navigation a:focus,
+.header-contacts a:hover,
+.header-contacts a:focus {
+  color: var(--accent-color);
+}
+/* footer*/
+address a {
+  color: var(--second-additional-color);
+}
+
+/*index.html main*/
+.hero-button {
+  color: var(--additional-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.benefits h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.benefits p {
+  font-weight: 400;
+  line-height: 1.71;
+}
+.team-section {
+  background-color: var(--section-bg-color);
+}
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+/*portfolio.html main*/
+.filter button {
+  background-color: var(--section-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+.filter button:hover,
+.filter button:focus {
+  color: var(--additional-color);
+  background-color: var(--accent-color);
+}
+.projects h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.projects p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+.projects li {
+  background: var(--additional-color);
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}

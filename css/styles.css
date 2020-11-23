@@ -61,7 +61,7 @@ a {
   text-decoration: none;
   color: inherit;
   display: block;
-  background-color: red;
+  /* background-color: red; */
 }
 img {
   display: block;

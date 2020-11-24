@@ -204,11 +204,17 @@ h2 {
 .hero {
   text-align: center;
 }
+.hero h1 {
+  display: block;
+  width: 630px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .hero-button {
   display: inline-block;
   padding: 10px 32px;
-  margin-bottom: 170px;
-  margin-top: 30px;
+  margin-bottom: 111px;
   color: var(--additional-color);
   background-color: var(--accent-color);
 

@@ -258,9 +258,10 @@ h2 {
 .spec-ion li:not(:last-child) {
   margin-right: 30px;
 }
-
 .team-section {
   background-color: var(--section-bg-color);
+}
+.team-section > div {
   padding-top: 94px;
   padding-bottom: 94px;
 }

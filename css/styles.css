@@ -82,17 +82,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-h1 {
-  color: var(--additional-color);
-  display: inline-block;
-  margin-top: 106px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
+
 h2 {
   font-weight: 700;
   font-size: 36px;
@@ -202,8 +192,8 @@ h2 {
 /*index.html main*/
 .hero-section {
   background-color: #2f303a;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero {
   text-align: center;
@@ -214,17 +204,24 @@ h2 {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
+  color: var(--additional-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3636;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero-button {
   display: inline-block;
   padding: 10px 32px;
-  margin-bottom: 111px;
+
   color: var(--additional-color);
   background-color: var(--accent-color);
-
-  font-weight: 700;
+  font-weight: 900;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
   text-align: center;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
